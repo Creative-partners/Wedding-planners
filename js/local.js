@@ -9,6 +9,7 @@ const inviteTemplates = [
 
 let weddingVenue;
 let invitationTemp;
+let invitations = []; 
 
 // rendering invitation templates to select from
 const templateSection = document.getElementById('templates');
@@ -24,7 +25,7 @@ function renderTemplates() {
   for (let i = 0; i < inviteTemplates.length; i++) {
     let linkEl = document.createElement('a');
     articleEl.appendChild(linkEl);
-    linkEl.setAttribute('href', 'html/Generate-invitation.html');
+    linkEl.setAttribute('href', 'Generate-invitation.html');
     linkEl.setAttribute('target', '_blank');
     let imageEl = document.createElement('img');
     linkEl.appendChild(imageEl);
@@ -51,7 +52,6 @@ console.log('check venue selected ' + weddingVenue);
 
 
 // store invitation information into an array of objects
-let invitations = [];
 function Invitation(bName, bFamily, gName, gFamily, wedDate, wedVenue, inviteTemp) {
   this.bride = bName;
   this.brideFamilyName = bFamily;
@@ -103,4 +103,4 @@ function retrieveData() {
     );
   }
 }
-retrieveData();
+
