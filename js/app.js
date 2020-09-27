@@ -38,16 +38,16 @@ function Branch(setting, name, location, image, size, isDjIncluded, catering, pr
 */
 
 //tests
-new Branch('indoor', 'Adonees Hall', 'Az zarqa/Army st.', '../img/adonees.png', 'small', 'yes', 'yes', '30');
-new Branch('indoor', 'Banafsaj Hall', 'Tlaa Al Ali - Amman', '../img/banafsaj.jpg' , 'medium', 'no', 'yes', '30');
-new Branch('outdoor', 'Country Club', 'Action Target, Queen Alia Airport Road', '../img/country-club.jpg', 'small', 'no', 'no', '45');
-new Branch('outdoor', 'Dunes Club', 'Close to Gamadan, Queen Alia Airport Road', '../img/dunes-club.jpg', 'small', 'no', 'no', '50');
-new Branch('indoor', 'Fairmont Hotel', ' 5th Circle, Amman', '../img/fairmont.jpg', 'medium', 'yes', 'yes', '60');
-new Branch('outdoor', 'Four Seasons', ' Kindi St, Amman', '../img/fourseasons.jpg', 'medium', 'yes', 'yes', '55');
-new Branch('indoor', 'Numan Hall', 'Wasfi At-Tall St., Amman', '../img/numan.jpg', 'large', 'no', 'yes', '40');
-new Branch('indoor', 'Rotana Hotel', 'Black Iris Street, Amman', '../img/rotana.jpg', 'medium', 'yes', 'no', '60');
-new Branch('outdoor', 'W Amman', 'Rafiq Al Hariri Ave, Amman', '../img/w-amman.jpg', 'medium', 'yes', 'yes', '50');
-new Branch('outdoor', 'white Halls', 'Queen Alia Airport Road', '../img/white-halls.jpg', 'large', 'yes', 'no', '55');
+new Branch('indoor', 'Adonees Hall', 'Az zarqa/Army st.', 'img/adonees.png', 'small', 'yes', 'yes', '30');
+new Branch('indoor', 'Banafsaj Hall', 'Tlaa Al Ali - Amman', 'img/banafsaj.jpg' , 'medium', 'no', 'yes', '30');
+new Branch('outdoor', 'Country Club', 'Action Target, Queen Alia Airport Road', 'img/country-club.jpg', 'small', 'no', 'no', '45');
+new Branch('outdoor', 'Dunes Club', 'Close to Gamadan, Queen Alia Airport Road', 'img/dunes-club.jpg', 'small', 'no', 'no', '50');
+new Branch('indoor', 'Fairmont Hotel', ' 5th Circle, Amman', 'img/fairmont.jpg', 'medium', 'yes', 'yes', '60');
+new Branch('outdoor', 'Four Seasons', ' Kindi St, Amman', 'img/fourseasons.jpg', 'medium', 'yes', 'yes', '55');
+new Branch('indoor', 'Numan Hall', 'Wasfi At-Tall St., Amman', 'img/numan.jpg', 'large', 'no', 'yes', '40');
+new Branch('indoor', 'Rotana Hotel', 'Black Iris Street, Amman', 'img/rotana.jpg', 'medium', 'yes', 'no', '60');
+new Branch('outdoor', 'W Amman', 'Rafiq Al Hariri Ave, Amman', 'img/w-amman.jpg', 'medium', 'yes', 'yes', '50');
+new Branch('outdoor', 'white Halls', 'Queen Alia Airport Road', 'img/white-halls.jpg', 'large', 'yes', 'no', '55');
 
 
 // Branch.prototype.render = function () {
@@ -98,7 +98,7 @@ new Branch('outdoor', 'white Halls', 'Queen Alia Airport Road', '../img/white-ha
 // var chosenSize;
 // var dj;
 // var catering;
-// var userSetting;
+// var door;
 
 // // event listener to determine form inputs
 // let form1 = document.getElementsById('user-form');
@@ -163,7 +163,7 @@ var wDate = '27/9/2020';
 var chosenSize = 'medium';
 var dj = 'yes';
 var catering = 'yes';
-var userSetting = 'outdoor';
+var door = 'outdoor';
 
 
 // rendering suitable options after form is filler
@@ -197,7 +197,7 @@ function renderResults() {
     priceItem.textContent = 'Starting price (per person): ' + options[i].price + ' JDs';
     let imageEl = document.createElement('img');
     articleEl.appendChild(imageEl);
-    imageEl.setAttribute('src', options[i].path);
+    imageEl.setAttribute('src', options[i].image);
     imageEl.setAttribute('title', options[i].name);
     let buttonEl = document.createElement('button');
     articleEl.appendChild(buttonEl);
@@ -223,7 +223,7 @@ function filter(settingInput, sizeInput, djInput, cateringInput) {
   }
   renderResults();
 }
-filter(userSetting, chosenSize, dj, catering);
+filter(door, chosenSize, dj, catering);
 console.log('result of filter ' + options);
 
 

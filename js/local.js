@@ -25,7 +25,7 @@ function renderTemplates() {
   for (let i = 0; i < inviteTemplates.length; i++) {
     let linkEl = document.createElement('a');
     articleEl.appendChild(linkEl);
-    linkEl.setAttribute('href', 'Generate-invitation.html');
+    linkEl.setAttribute('href', 'invite.html');
     linkEl.setAttribute('target', '_blank');
     let imageEl = document.createElement('img');
     linkEl.appendChild(imageEl);
@@ -47,22 +47,9 @@ function selectLocationHandler(event) {
       }
     }
   }
+  document.getElementById('results').removeEventListener('click', selectLocationHandler);
 }
 console.log('check venue selected ' + weddingVenue);
-
-
-// store invitation information into an array of objects
-function Invitation(bName, bFamily, gName, gFamily, wedDate, wedVenue, inviteTemp) {
-  this.bride = bName;
-  this.brideFamilyName = bFamily;
-  this.groom = gName;
-  this.groomFamilyName = gFamily;
-  this.weddingDay = wedDate;
-  this.chosenVenue = wedVenue;
-  this.invite = inviteTemp;
-  invitations.push(this);
-}
-console.log('check invitations ' + invitations);
 
 // event listener to check for user template selection
 templateSection.addEventListener('click', selectTemplateHandler);
@@ -77,7 +64,21 @@ function selectTemplateHandler(event) {
   }
   new Invitation(bName, lName, gName, glName, wDate, weddingVenue, invitationTemp);
   storeData();
+  document.getElementById('templates').removeEventListener('click', selectTemplateHandler);
 }
+
+// store invitation information into an array of objects
+function Invitation(bName, bFamily, gName, gFamily, wedDate, wedVenue, inviteTemp) {
+  this.bride = bName;
+  this.brideFamilyName = bFamily;
+  this.groom = gName;
+  this.groomFamilyName = gFamily;
+  this.weddingDay = wedDate;
+  this.chosenVenue = wedVenue;
+  this.invite = inviteTemp;
+  invitations.push(this);
+}
+console.log('check invitations ' + invitations);
 
 // store invitations into local storage
 function storeData() {
