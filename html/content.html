@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-              <li><a href="#">Navigation</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Links</a></li>
-            </ul>
-          </nav>
-    </header>
-    <main>
-        <fieldset>
-            <legend>Fill This Form </legend>
-            <br>
-            <label for="bName">Bride name : </label>
-            <input type="text" id="bName" name="" required ><br><br>
-            <label for="lName">Bride last name : </label>
-            <input type="text" id="lName" name="" required><br><br>
-            <label for="gName">Groom name : </label>
-            <input type="text" id="gName" name="" required><br><br>
-            <label for="glName">Groom last name : </label>
-            <input type="text" id="glName" name="" required><br><br>
-            <label for="date">Wedding Date : </label>
-            <input type="date" name="date" id="date"><br><br>
-            <label for="">which size do you like better ?</label><br><br>
-            <label for="">Small size (up to 300 person) </label>
-            <input type="checkbox" id="size0" name="check" value="Small" onclick="onlyOne(this) "> <br><br>
-            <label for=""> Medium size (300 -700 person)</label>
-            <input type="checkbox" id="size1" name="check" value="Medium" onclick="onlyOne(this) " ><br><br>
-            <label for="">large size (700-1000 person)</label>
-            <input type="checkbox" id="size2" name="check" value="Large" onclick="onlyOne(this)  " ><br><br>
-            <label for="">DJ include : </label>
-            <label for="">Yes</label>
-            <input type="radio" name="dj" id="dj1" value="Yes">
-            <label for="">No</label>
-            <input type="radio" name="dj" id="dj2" value="No"><br><br>
-            <label for="">Catrering include : </label>
-            <label for="">Yes</label>
-            <input type="radio" name="Ca" id="ca1" value="Yes">
-            <label for="">No</label>
-            <input type="radio" name="Ca" id="ca2" value="No"><br><br>
-            <input type="Submit" id="submit" value="Submit"  >
-          </fieldset>
-      </form>
-    </main>
-   
-    <footer></footer>
-    <script src="js/app.js"></script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Navigation</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form id='user-form'>
+      <fieldset>
+        <legend>Fill This Form </legend>
+        <br>
+        <label for="bName">Bride name : </label>
+        <input type="text" id="bName" name="" required><br><br>
+        <label for="lName">Bride last name : </label>
+        <input type="text" id="lName" name="" required><br><br>
+        <label for="gName">Groom name : </label>
+        <input type="text" id="gName" name="" required><br><br>
+        <label for="glName">Groom last name : </label>
+        <input type="text" id="glName" name="" required><br><br>
+        <label for="date">Wedding Date : </label>
+        <input type="date" name="date" id="date"><br><br>
+        <label for="">which size do you like better ?</label><br><br>
+        <label for="">Small size (up to 300 person) </label>
+        <input type="checkbox" id="size0" name="check" value="small" onclick="onlyOne(this) "> <br><br>
+        <label for=""> Medium size (300 -700 person)</label>
+        <input type="checkbox" id="size1" name="check" value="medium" onclick="onlyOne(this) "><br><br>
+        <label for="">large size (700-1000 person)</label>
+        <input type="checkbox" id="size2" name="check" value="large" onclick="onlyOne(this)  "><br><br>
+        <label for="">DJ include : </label>
+        <label for="">Yes</label>
+        <input type="radio" name="dj" id="dj1" value="yes">
+        <label for="">No</label>
+        <input type="radio" name="dj" id="dj2" value="no"><br><br>
+        <label for="">Catering include : </label>
+        <label for="">Yes</label>
+        <input type="radio" name="Ca" id="ca1" value="yes">
+        <label for="">No</label>
+        <input type="radio" name="Ca" id="ca2" value="no"><br><br>
+        <input type="Submit" id="submit" value="Submit">
+      </fieldset>
+    </form>
+    <section id='results'>
+
+    </section>
+  </main>
+
+  <footer></footer>
+  <script src="../js/app.js"></script>
 </body>
+
 </html>
