@@ -5,9 +5,10 @@ let branches = [];
 
 
 
-function Branch(setting, location, image, size, isDjincluded, catring) {
+function Branch(setting, name, location, image, size, isDjincluded, catring) {
 
   this.setting = setting;
+  this.name = name;
   this.location = location;
   this.image = image;
   this.setting = setting;
@@ -21,16 +22,16 @@ function Branch(setting, location, image, size, isDjincluded, catring) {
 
 Branch.prototype.render = function () {
   for (let i = 0; i < size.length; i++) {
-    new Branch('indoor', 'adonees', , size[i], 'with DJ', 'with catring service');
-    new Branch('outdoor', 'Banafsaj', size[i], 'without DJ', 'with catring service');
-    new Branch('outdoor', 'Country Club', size[i], 'without DJ', 'without catring service');
-    new Branch('outdoor', 'dunes club', size[i], 'without DJ', 'without catring service');
-    new Branch('indoor', 'fairmont', size[i], 'with DJ', 'with catring service');
-    new Branch('outdoor', 'fourseasons', size[i], 'without DJ', 'without catring service');
-    new Branch('indoor', 'Numan', size[i], 'without DJ', 'with catring service');
-    new Branch('indoor', 'rotana', size[i], 'with DJ', 'without catring service');
-    new Branch('outdoor', 'W amman', size[i], 'with DJ', 'with catring service');
-    new Branch('indoor', 'white halls', size[i], 'with DJ', 'without catring service');
+    new Branch('indoor', 'adonees','Az zarqa/Army st.', 'images/adonees.png' , size[i], 'with DJ', 'with catring service');
+    new Branch('outdoor', 'Banafsaj', 'Tlaa Al Ali - Amman' ,'images/anafsaj.jpg' , size[i], 'without DJ', 'with catring service');
+    new Branch('outdoor', 'Country Club','Action Target, Queen Alia Airport Road' , 'images/Country Club.jpg' , size[i], 'without DJ', 'without catring service');
+    new Branch('outdoor', 'dunes club','Close to Gamadan, Queen Alia Airport Road' ,'images/dunes club.jpg' , size[i], 'without DJ', 'without catring service');
+    new Branch('indoor', 'fairmont', ' 5th Circle, Amman','images/fairmont.jpg' , size[i], 'with DJ', 'with catring service');
+    new Branch('outdoor', 'fourseasons', ' Kindi St, Amman','images/fourseasons.jpg' , size[i], 'without DJ', 'without catring service');
+    new Branch('indoor', 'Numan', 'Wasfi At-Tall St., Amman','images/Numan.jpg' , size[i], 'without DJ', 'with catring service');
+    new Branch('indoor', 'rotana', 'Black Iris Street, Amman', 'images/rotana.jpg' , size[i], 'with DJ', 'without catring service');
+    new Branch('outdoor', 'W amman','Rafiq Al Hariri Ave, Amman','images/W amman.jpg' , size[i], 'with DJ', 'with catring service');
+    new Branch('indoor', 'white halls','Queen Alia Airport Road','images/white halls.jpg' , size[i], 'with DJ', 'without catring service');
   }
 
   let group;
