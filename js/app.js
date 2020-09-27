@@ -139,9 +139,19 @@ form1.addEventListener('submit', function (event) {
     catering = event.target.ca2.value;
   }
 
-  console.log('in', bName, lName, gName, glName, wDate, chosenSize, dj, catering);
+  var doorIndex = [document.getElementById('in'), document.getElementById('out')];
+
+  if (doorIndex[0].checked) {
+    door = event.target.in.value;
+  }
+
+  if (doorIndex[1].checked) {
+    door = event.target.out.value;
+  }
+
+  console.log('in', bName, lName, gName, glName, wDate, chosenSize, dj, catering,door);
 });
-console.log('out', bName, lName, gName, glName, wDate, chosenSize, dj, catering);
+console.log('out', bName, lName, gName, glName, wDate, chosenSize, dj, catering,door);
 
 
 // // test data
