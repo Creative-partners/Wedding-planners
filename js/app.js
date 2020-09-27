@@ -21,7 +21,7 @@ function Branch(setting, location, image, size, isDjincluded, catring) {
 
 Branch.prototype.render = function () {
   for (let i = 0; i < size.length; i++) {
-    new Branch('indoor', 'adonees',  size[i], 'with DJ', 'with catring service');
+    new Branch('indoor', 'adonees', , size[i], 'with DJ', 'with catring service');
     new Branch('outdoor', 'Banafsaj', size[i], 'without DJ', 'with catring service');
     new Branch('outdoor', 'Country Club', size[i], 'without DJ', 'without catring service');
     new Branch('outdoor', 'dunes club', size[i], 'without DJ', 'without catring service');
