@@ -1,6 +1,6 @@
 retrieveData();
 
-const inviteArticle = document.getElementsById('generated');
+const inviteArticle = document.getElementById('generated');
 function renderInvitation (){
     const x = invitations.length-1 ;
     for (let i = x; i < invitations.length; i++) {
