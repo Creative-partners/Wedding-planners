@@ -1,10 +1,10 @@
 'use strict';
 const inviteTemplates = [
-  ['img/invites/1.jpg', 'winter'],
-  ['img/invites/2.jpg', 'summer'],
-  ['img/invites/3.jpg', 'spring'],
-  ['img/invites/4.jpg', 'gold'],
-  ['img/invites/5.jpg', 'fall'],
+  ['../img/invites/1.jpg', 'winter'],
+  ['../img/invites/2.jpg', 'summer'],
+  ['../img/invites/3.jpg', 'spring'],
+  ['../img/invites/4.jpg', 'gold'],
+  ['../img/invites/5.jpg', 'fall'],
 ];
 
 let weddingVenue;
@@ -24,7 +24,7 @@ function renderTemplates() {
   for (let i = 0; i < inviteTemplates.length; i++) {
     let linkEl = document.createElement('a');
     articleEl.appendChild(linkEl);
-    linkEl.setAttribute('href', 'invite.html');
+    linkEl.setAttribute('href', 'html/Generate-invitation.html');
     linkEl.setAttribute('target', '_blank');
     let imageEl = document.createElement('img');
     linkEl.appendChild(imageEl);

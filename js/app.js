@@ -20,17 +20,34 @@ function Branch(setting, name, location, image, size, isDjIncluded, catering, pr
 
 }
 
+/* // image paths
+../img/adonees.png
+../img/banafsaj.jpg
+../img/country-club.jpg
+../img/dunes-club.jpg
+../img/dunes-club2.jpg
+../img/fairmont.jpg
+../img/fairmont2.jpg
+../img/fourseason.jpg
+../img/fourseason2.jpg
+../img/numan.jpg
+../img/rotana.jpg
+../img/rotana2.jpg
+../img/w-amman.jpg
+../img/white-halls.jpg
+*/
+
 //tests
-new Branch('indoor', 'Adonees Hall', 'Az zarqa/Army st.', 'img/adonees.png', 'small', 'yes', 'yes', '30');
-new Branch('indoor', 'Banafsaj Hall', 'Tlaa Al Ali - Amman', 'img/anafsaj.jpg', 'medium', 'no', 'yes', '30');
-new Branch('outdoor', 'Country Club', 'Action Target, Queen Alia Airport Road', 'img/Country Club.jpg', 'small', 'no', 'no', '45');
-new Branch('outdoor', 'Dunes Club', 'Close to Gamadan, Queen Alia Airport Road', 'img/dunes club.jpg', 'small', 'no', 'no', '50');
-new Branch('indoor', 'Fairmont Hotel', ' 5th Circle, Amman', 'img/fairmont.jpg', 'medium', 'yes', 'yes', '60');
-new Branch('outdoor', 'Four Seasons', ' Kindi St, Amman', 'img/fourseasons.jpg', 'small', 'no', 'no', '55');
-new Branch('indoor', 'Numan Hall', 'Wasfi At-Tall St., Amman', 'img/Numan.jpg', 'large', 'no', 'yes', '40');
-new Branch('indoor', 'Rotana Hotel', 'Black Iris Street, Amman', 'img/rotana.jpg', 'medium', 'yes', 'no', '60');
-new Branch('outdoor', 'W Amman', 'Rafiq Al Hariri Ave, Amman', 'img/W amman.jpg', 'medium', 'yes', 'yes', '50');
-new Branch('outdoor', 'white Halls', 'Queen Alia Airport Road', 'img/white halls.jpg', 'large', 'yes', 'no', '55');
+new Branch('indoor', 'Adonees Hall', 'Az zarqa/Army st.', '../img/adonees.png', 'small', 'yes', 'yes', '30');
+new Branch('indoor', 'Banafsaj Hall', 'Tlaa Al Ali - Amman', '../img/banafsaj.jpg' , 'medium', 'no', 'yes', '30');
+new Branch('outdoor', 'Country Club', 'Action Target, Queen Alia Airport Road', '../img/country-club.jpg', 'small', 'no', 'no', '45');
+new Branch('outdoor', 'Dunes Club', 'Close to Gamadan, Queen Alia Airport Road', '../img/dunes-club.jpg', 'small', 'no', 'no', '50');
+new Branch('indoor', 'Fairmont Hotel', ' 5th Circle, Amman', '../img/fairmont.jpg', 'medium', 'yes', 'yes', '60');
+new Branch('outdoor', 'Four Seasons', ' Kindi St, Amman', '../img/fourseasons.jpg', 'small', 'no', 'no', '55');
+new Branch('indoor', 'Numan Hall', 'Wasfi At-Tall St., Amman', '../img/numan.jpg', 'large', 'no', 'yes', '40');
+new Branch('indoor', 'Rotana Hotel', 'Black Iris Street, Amman', '../img/rotana.jpg', 'medium', 'yes', 'no', '60');
+new Branch('outdoor', 'W Amman', 'Rafiq Al Hariri Ave, Amman', '../img/w-amman.jpg', 'medium', 'yes', 'yes', '50');
+new Branch('outdoor', 'white Halls', 'Queen Alia Airport Road', '../img/white-halls.jpg', 'large', 'yes', 'no', '55');
 
 
 // Branch.prototype.render = function () {
