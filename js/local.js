@@ -9,7 +9,7 @@ const inviteTemplates = [
 
 let weddingVenue;
 let invitationTemp;
-let invitations = []; 
+let invitations = [];
 
 // rendering invitation templates to select from
 const templateSection = document.getElementById('templates');

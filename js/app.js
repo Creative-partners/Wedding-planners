@@ -10,8 +10,9 @@ function Branch(setting, name, location, image, size, isDjIncluded, catering, pr
   this.image = image;
   this.setting = setting;
   this.size = size;
-  this.isDjincluded = isDjincluded;
-  this.catring = catring;
+  this.isDjIncluded = isDjIncluded;
+  this.catering = catering;
+  this.price = price;
   branches.push(this);
 }
 
@@ -48,9 +49,21 @@ for (let i = 0; i < size.length; i++) {
 function onlyOne(checkbox) {
   const checkboxes = document.getElementsByName('check');
 }
+var slideIndex = 1;
+showDivs(slideIndex);
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = x.length };
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "block";
 }
 
 let bName;
@@ -122,7 +135,7 @@ function formHandler(event) {
   if (doorIndex[0].checked) {
     door = event.target.in.value;
   }
-  
+
   if (doorIndex[1].checked) {
     door = event.target.out.value;
   }
@@ -130,7 +143,7 @@ function formHandler(event) {
 
   console.log('in', bName, lName, gName, glName, wDate, chosenSize, dj, catering, door);
   filter(door, chosenSize, dj, catering);
-  document.getElementById('user-form').removeEventListener('submit', formHandler );
+  document.getElementById('user-form').removeEventListener('submit', formHandler);
   document.getElementById('user-form').addEventListener('submit', function (event) {
     event.preventDefault();
   });
