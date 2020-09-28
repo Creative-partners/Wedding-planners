@@ -1,0 +1,38 @@
+#user-form {
+    
+    
+    background-color: #faeace;
+    margin-left: 50%;
+    margin-right: 25%;
+    padding: 20px;
+    height: 425px;
+}
+#img1 {
+    border-radius: 5px;
+    float: left;
+    height: 466px;
+    width: 25%;
+    margin-left: 25%;
+}
+#sec1{
+    display: inline;
+    border-radius: 5px;
+
+
+}
+#submit{
+ text-align: center;
+ background-color: rgba(143, 21, 21, 0.966);
+ color: #faeace;
+ border-radius: 10px;
+margin-left: 135px;
+font-size: large;
+}
+input{
+
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color:#faeace;
+}

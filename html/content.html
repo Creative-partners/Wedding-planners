@@ -4,42 +4,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style2.css">
   <title>Document</title>
 </head>
 
 <body>
   <header>
     <nav>
+      <img id="p1" src="a.png" alt="">
+      <h2>Wedding planners</h2>
+      <p>The Best choice for your big day</p>
       <ul>
-        <li><a href="#">Navigation</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Links</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Contacts</a></li>
       </ul>
     </nav>
+    <br>
+        <br>
+        <br>
   </header>
+  <br>
+  <br>
   <main>
+
+    <section id="sec1">
+    <img id="img1" src="b6c981cfcd373d37522e5ad579f4bba0.jpg" alt="">
     <form id='user-form'>
       <fieldset>
-        <legend>Fill This Form </legend>
+        <legend>Registration Info</legend>
         <br>
-        <label for="bName">Bride name : </label>
-        <input type="text" id="bName" name="" required><br><br>
-        <label for="lName">Bride last name : </label>
-        <input type="text" id="lName" name="" required><br><br>
-        <label for="gName">Groom name : </label>
-        <input type="text" id="gName" name="" required><br><br>
-        <label for="glName">Groom last name : </label>
-        <input type="text" id="glName" name="" required><br><br>
-        <label for="date">Wedding Date : </label>
-        <input type="date" name="date" id="date"><br><br>
-        <label for="">which size do you like better ?</label><br><br>
-        <label for="">Small size (up to 300 person) </label>
-        <input type="checkbox" id="size0" name="check" value="small" onclick="onlyOne(this) "> <br><br>
-        <label for=""> Medium size (300 -700 person)</label>
-        <input type="checkbox" id="size1" name="check" value="medium" onclick="onlyOne(this) "><br><br>
-        <label for="">large size (700-1000 person)</label>
-        <input type="checkbox" id="size2" name="check" value="large" onclick="onlyOne(this)  "><br><br>
+       
+        <input type="text" id="bName" name="" required placeholder="Bride name"><br><br>
+       
+        <input type="text" id="lName" name="" required placeholder="Bride last name"><br><br>
+        
+        <input type="text" id="gName" name="" required placeholder="Groom name"><br><br>
+        
+        <input type="text" id="glName" name="" required placeholder="Groom last name"><br><br>
+        
+        <input type="date" name="date" id="date" placeholder="Wedding Date"><br><br>
+       
         <label for="">DJ include : </label>
         <label for="">Yes</label>
         <input type="radio" name="dj" id="dj1" value="yes">
@@ -55,9 +61,20 @@
         <input type="radio" name="in" id="in" value="Indoor">
         <label for="">Outdoor</label>
         <input type="radio" name="out" id="out" value="Outdoor"><br><br>
+        <label for="">Size</label>
+        <select name="cars" id="cars" aria-placeholder="Small">
+          <option value="Small" aria-placeholder="Small">Small</option>
+          <option value="Medium" aria-placeholder="Small">Medium</option>
+          <option value="large">large</option>
+         
+        </select>
+        <br>
+        <br>
+        <br>
         <input type="Submit" id="submit" value="Submit">
       </fieldset>
     </form>
+  </section>
     <section id='results'>
 
     </section>
