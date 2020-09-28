@@ -118,6 +118,14 @@ video {
 #images {
     margin-top: -70px;
 }
- 
+.teamimg{
+    display: inline-block;
+    float: left;
+    width: 200px;
+    border-radius: 500px;
+   
+
+}
+
 
   
