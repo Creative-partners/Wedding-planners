@@ -186,7 +186,7 @@ function renderResults() {
     articleEl.appendChild(unorderedList);
     const nameItem = document.createElement('li');
     unorderedList.appendChild(nameItem);
-    nameItem.textContent = 'Name of location:' + options[i].name;
+    nameItem.textContent = options[i].name;
     const addressItem = document.createElement('li');
     unorderedList.appendChild(addressItem);
     addressItem.textContent = 'Address: ' + options[i].location;
@@ -209,6 +209,7 @@ function renderResults() {
     articleEl.appendChild(imageEl);
     imageEl.setAttribute('src', options[i].image);
     imageEl.setAttribute('title', options[i].name);
+    imageEl.setAttribute('class', 'option-img');
     const buttonEl = document.createElement('button');
     articleEl.appendChild(buttonEl);
     buttonEl.setAttribute('id', options[i].id);
