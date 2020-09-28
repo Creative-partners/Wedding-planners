@@ -1,24 +1,59 @@
 'use strict';
 
-var size = ['small', 'medium', 'large'];
+const size = ['small', 'medium', 'large'];
 let branches = [];
 
+
+
+
+function Branch(setting, location, image, size, isDjincluded, catring) {
+
+=======
 // object to store locations
 function Branch(setting, name, location, image, size, isDjIncluded, catering, price) {
 
   this.setting = setting;
-  this.name = name;
-  this.id = name.split(' ').slice(0, -1).toString();
   this.location = location;
   this.image = image;
   this.setting = setting;
   this.size = size;
-  this.isDjIncluded = isDjIncluded;
-  this.catering = catering;
-  this.price = price;
+  this.isDjincluded = isDjincluded;
+  this.catring = catring;
   branches.push(this);
-
 }
+
+
+Branch.prototype.render = function () {
+  for (let i = 0; i < size.length; i++) {
+    new Branch('indoor', 'adonees', 'img/adonees.png' , size[i], 'with DJ', 'with catring service');
+    new Branch('outdoor', 'Banafsaj', 'img/Banafsaj.jpg', size[i], 'without DJ', 'with catring service');
+    new Branch('outdoor', 'Country Club','img/Country Club.jpg' , size[i], 'without DJ', 'without catring service');
+    new Branch('outdoor', 'dunes club', 'img/dunes club.jpg' ,size[i], 'without DJ', 'without catring service');
+    new Branch('indoor', 'fairmont', 'img/fairmont.jpg' ,size[i], 'with DJ', 'with catring service');
+    new Branch('outdoor', 'fourseasons', 'img/fourseasons.jpg' ,size[i], 'without DJ', 'without catring service');
+    new Branch('indoor', 'Numan', 'img/Numan.jpg' ,size[i], 'without DJ', 'with catring service');
+    new Branch('indoor', 'rotana', 'img/rotana.jpg' ,size[i], 'with DJ', 'without catring service');
+    new Branch('outdoor', 'W amman', 'img/W amman.jpg' ,size[i], 'with DJ', 'with catring service');
+    new Branch('indoor', 'white halls', 'img/white halls.jpg' ,size[i], 'with DJ', 'without catring service');
+  }
+
+  let group;
+  if (this.setting === 'indoor' && this.size === size[2]) {
+    group = 'A';
+  }
+  if (this.setting === 'indoor' && this.size === (size[0] || size[1])) {
+    group = 'B';
+  }
+  if (this.setting === 'outdoor' && this.size === size[2]) {
+    group = 'C';
+  }
+  if (this.setting === 'outdoor' && this.size === (size[0] || size[1])) {
+    group = 'D';
+  }
+};
+
+var slideIndex = 1;
+showDivs(slideIndex);
 
 /* // image paths
 ../img/adonees.png
@@ -37,71 +72,51 @@ function Branch(setting, name, location, image, size, isDjIncluded, catering, pr
 ../img/white-halls.jpg
 */
 
-// //tests
-// new Branch('indoor', 'Adonees Hall', 'Az zarqa/Army st.', '../img/adonees.png', 'small', 'yes', 'yes', '30');
-// new Branch('indoor', 'Banafsaj Hall', 'Tlaa Al Ali - Amman', '../img/banafsaj.jpg' , 'medium', 'no', 'yes', '30');
-// new Branch('outdoor', 'Country Club', 'Action Target, Queen Alia Airport Road', '../img/country-club.jpg', 'small', 'no', 'no', '45');
-// new Branch('outdoor', 'Dunes Club', 'Close to Gamadan, Queen Alia Airport Road', '../img/dunes-club.jpg', 'small', 'no', 'no', '50');
-// new Branch('indoor', 'Fairmont Hotel', ' 5th Circle, Amman', '../img/fairmont.jpg', 'medium', 'yes', 'yes', '60');
-// new Branch('outdoor', 'Four Seasons', ' Kindi St, Amman', '../img/fourseasons.jpg', 'medium', 'yes', 'yes', '55');
-// new Branch('indoor', 'Numan Hall', 'Wasfi At-Tall St., Amman', '../img/numan.jpg', 'large', 'no', 'yes', '40');
-// new Branch('indoor', 'Rotana Hotel', 'Black Iris Street, Amman', '../img/rotana.jpg', 'medium', 'yes', 'no', '60');
-// new Branch('outdoor', 'W Amman', 'Rafiq Al Hariri Ave, Amman', '../img/w-amman.jpg', 'medium', 'yes', 'yes', '50');
-// new Branch('outdoor', 'white Halls', 'Queen Alia Airport Road', '../img/white-halls.jpg', 'large', 'yes', 'no', '55');
-
-
-Branch.prototype.render = function () {
-// entering new locations
-  for (let i = 0; i < size.length; i++) {
-    new Branch('indoor', 'Adonees Hall', 'Az zarqa/Army st.', 'img/adonees.png', size[i], 'yes', 'yes', '30');
-    new Branch('outdoor', 'Banafsaj Hall', 'Tlaa Al Ali - Amman', 'img/anafsaj.jpg', size[i], 'no', 'yes', '30');
-    new Branch('outdoor', 'Country Club', 'Action Target, Queen Alia Airport Road', 'img/Country Club.jpg', size[i], 'no', 'no', '45');
-    new Branch('outdoor', 'Dunes Club', 'Close to Gamadan, Queen Alia Airport Road', 'img/dunes club.jpg', size[i], 'no', 'no', '50');
-    new Branch('indoor', 'Fairmont Hotel', ' 5th Circle, Amman', 'img/fairmont.jpg', size[i], 'yes', 'yes', '60');
-    new Branch('outdoor', 'Four Seasons', ' Kindi St, Amman', 'img/fourseasons.jpg', size[i], 'no', 'no', '55');
-    new Branch('indoor', 'Numan Hall', 'Wasfi At-Tall St., Amman', 'img/Numan.jpg', size[i], 'no', 'yes', '40');
-    new Branch('indoor', 'Rotana Hotel', 'Black Iris Street, Amman', 'img/rotana.jpg', size[i], 'yes', 'no', '60');
-    new Branch('outdoor', 'W Amman', 'Rafiq Al Hariri Ave, Amman', 'img/W amman.jpg', size[i], 'yes', 'yes', '50');
-    new Branch('indoor', 'white Halls', 'Queen Alia Airport Road', 'img/white halls.jpg', size[i], 'yes', 'no', '55');
-  }
-
-  // allow different size options for venues
-  let group;
-  if (this.setting === 'indoor' && this.size === size[2]) {
-    group = 'A';
-  }
-  if (this.setting === 'indoor' && this.size === (size[0] || size[1])) {
-    group = 'B';
-  }
-  if (this.setting === 'outdoor' && this.size === size[2]) {
-    group = 'C';
-  }
-  if (this.setting === 'outdoor' && this.size === (size[0] || size[1])) {
-    group = 'D';
-  }
-
-};
-
-function onlyOne(checkbox) {
-  var checkboxes = document.getElementsByName('check');
-
-  checkboxes.forEach((item) => {
-    if (item !== checkbox) item.checked = false;
-  });
+for (let i = 0; i < size.length; i++) {
+  new Branch('indoor', 'Adonees Hall', 'Az zarqa/Army st.', '../img/adonees.png', size[i], 'yes', 'no', '30');
+  new Branch('indoor', 'Banafsaj Hall', 'Tlaa Al Ali - Amman', '../img/banafsaj.jpg', size[i], 'no', 'no', '30');
+  new Branch('indoor', 'Numan Hall', 'Wasfi At-Tall St., Amman', '../img/numan.jpg', size[i], 'no', 'yes', '40');
+  new Branch('indoor', 'Rotana Hotel', 'Black Iris Street, Amman', '../img/rotana.jpg', size[i], 'yes', 'yes', '60');
+  new Branch('indoor', 'W Amman', 'Rafiq Al Hariri Ave, Amman', '../img/w-amman.jpg', size[i], 'yes', 'yes', '50');
+  new Branch('outdoor', 'white Halls', 'Queen Alia Airport Road', '../img/white-halls.jpg', size[i], 'yes', 'no', '55');
+  new Branch('outdoor', 'Country Club', 'Action Target, Queen Alia Airport Road', '../img/country-club.jpg', size[i], 'no', 'no', '45');
+  new Branch('outdoor', 'Dunes Club', 'Close to Gamadan, Queen Alia Airport Road', '../img/dunes-club.jpg', size[i], 'no', 'yes', '50');
+  new Branch('outdoor', 'Fairmont Hotel', '5th Circle, Amman', '../img/fairmont.jpg', size[i], 'yes', 'yes', '60');
+  new Branch('outdoor', 'Four Seasons', 'Kindi St, Amman', '../img/fourseason.jpg', size[i], 'yes', 'yes', '55');
 }
 
-var bName;
-var lName;
-var gName;
-var glName;
-var wDate;
-var chosenSize;
-var dj;
-var catering;
-var userSetting;
+function onlyOne(checkbox) {
+  const checkboxes = document.getElementsByName('check');
+
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+=======
+let bName;
+let lName;
+let gName;
+let glName;
+let wDate;
+let chosenSize;
+let dj;
+let catering;
+let door;
 
 // event listener to determine form inputs
-let form1 = document.getElementsById('user-form');
+const form1 = document.getElementById('user-form');
 form1.addEventListener('submit', function (event) {
   event.preventDefault();
 
@@ -110,17 +125,21 @@ form1.addEventListener('submit', function (event) {
   gName = event.target.gName.value;
   glName = event.target.glName.value;
   wDate = event.target.date.value;
-  var size = [document.getElementById('size0'), document.getElementById('size1'), document.getElementById('size2')];
+
+  const size = [document.getElementById('size0'), document.getElementById('size1'), document.getElementById('size2')];
+  console.log('size' + size);
   if (size[0].checked === true) {
     chosenSize = event.target.size0.value;
   } else if (size[1].checked === true) {
     chosenSize = event.target.size1.value;
-  }
-  else {
+  } else {
     chosenSize = event.target.size2.value;
   }
-  var djIndex = [document.getElementById('dj1'), document.getElementById('dj2')];
+  console.log('chosen' + chosenSize);
 
+
+  const djIndex = [document.getElementById('dj1'), document.getElementById('dj2')];
+  console.log('dj index' + djIndex);
   if (djIndex[0].checked) {
     dj = event.target.dj1.value;
   }
@@ -128,8 +147,10 @@ form1.addEventListener('submit', function (event) {
   if (djIndex[1].checked) {
     dj = event.target.dj2.value;
   }
+  console.log('dj' + dj);
+  const caIndex = [document.getElementById('ca1'), document.getElementById('ca2')];
 
-  var caIndex = [document.getElementById('ca1'), document.getElementById('ca2')];
+  console.log('caIndex' + caIndex);
 
   if (caIndex[0].checked) {
     catering = event.target.ca1.value;
@@ -138,9 +159,10 @@ form1.addEventListener('submit', function (event) {
   if (caIndex[1].checked) {
     catering = event.target.ca2.value;
   }
+  console.log('catering' + catering);
 
-  var doorIndex = [document.getElementById('in'), document.getElementById('out')];
-
+  const doorIndex = [document.getElementById('in'), document.getElementById('out')];
+  console.log('doorIndex' + doorIndex);
   if (doorIndex[0].checked) {
     door = event.target.in.value;
   }
@@ -148,58 +170,46 @@ form1.addEventListener('submit', function (event) {
   if (doorIndex[1].checked) {
     door = event.target.out.value;
   }
+  console.log('door' + door);
 
-  console.log('in', bName, lName, gName, glName, wDate, chosenSize, dj, catering,door);
+  console.log('in', bName, lName, gName, glName, wDate, chosenSize, dj, catering, door);
+  filter(door, chosenSize, dj, catering);
 });
-console.log('out', bName, lName, gName, glName, wDate, chosenSize, dj, catering,door);
-
-
-// // test data
-// var bName = 'Bride';
-// var lName = 'B-Family';
-// var gName = 'Groom';
-// var glName = 'G-Family';
-// var wDate = '27/9/2020';
-// var chosenSize = 'medium';
-// var dj = 'yes';
-// var catering = 'yes';
-// var userSetting = 'outdoor';
-
 
 // rendering suitable options after form is filler
 const resultSection = document.getElementById('results');
 function renderResults() {
   for (let i = 0; i < options.length; i++) {
-    let articleEl = document.createElement('article');
+    const articleEl = document.createElement('article');
     resultSection.appendChild(articleEl);
-    let unorderedList = document.createElement('ul');
+    const unorderedList = document.createElement('ul');
     articleEl.appendChild(unorderedList);
-    let nameItem = document.createElement('li');
+    const nameItem = document.createElement('li');
     unorderedList.appendChild(nameItem);
     nameItem.textContent = 'Name of location:' + options[i].name;
-    let addressItem = document.createElement('li');
+    const addressItem = document.createElement('li');
     unorderedList.appendChild(addressItem);
     addressItem.textContent = 'Address: ' + options[i].location;
-    let settingItem = document.createElement('li');
+    const settingItem = document.createElement('li');
     unorderedList.appendChild(settingItem);
     settingItem.textContent = 'Works best for: ' + options[i].setting + ' events.';
-    let sizeItem = document.createElement('li');
+    const sizeItem = document.createElement('li');
     unorderedList.appendChild(sizeItem);
     sizeItem.textContent = 'Fits a ' + options[i].size + ' group.';
-    let djItem = document.createElement('li');
+    const djItem = document.createElement('li');
     unorderedList.appendChild(djItem);
     djItem.textContent = 'DJ included in price: ' + options[i].dj;
-    let cateringItem = document.createElement('li');
+    const cateringItem = document.createElement('li');
     unorderedList.appendChild(cateringItem);
     cateringItem.textContent = 'Catering included in price: ' + options[i].catering;
-    let priceItem = document.createElement('li');
+    const priceItem = document.createElement('li');
     unorderedList.appendChild(priceItem);
     priceItem.textContent = 'Starting price (per person): ' + options[i].price + ' JDs';
-    let imageEl = document.createElement('img');
+    const imageEl = document.createElement('img');
     articleEl.appendChild(imageEl);
-    imageEl.setAttribute('src', options[i].path);
+    imageEl.setAttribute('src', options[i].image);
     imageEl.setAttribute('title', options[i].name);
-    let buttonEl = document.createElement('button');
+    const buttonEl = document.createElement('button');
     articleEl.appendChild(buttonEl);
     buttonEl.setAttribute('id', options[i].id);
     buttonEl.setAttribute('class', 'button');
@@ -221,9 +231,9 @@ function filter(settingInput, sizeInput, djInput, cateringInput) {
       }
     }
   }
+  // console.log('result of filter ' + options);
   renderResults();
 }
-filter(userSetting, chosenSize, dj, catering);
-console.log('result of filter ' + options);
+
 
 
