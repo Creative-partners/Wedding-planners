@@ -3,57 +3,20 @@
 const size = ['small', 'medium', 'large'];
 let branches = [];
 
-
-
-
-function Branch(setting, location, image, size, isDjincluded, catring) {
-
-=======
 // object to store locations
 function Branch(setting, name, location, image, size, isDjIncluded, catering, price) {
-
   this.setting = setting;
+  this.name = name;
+  this.id = name.split(' ').slice(0, -1).toString();
   this.location = location;
   this.image = image;
   this.setting = setting;
   this.size = size;
-  this.isDjincluded = isDjincluded;
-  this.catring = catring;
+  this.isDjIncluded = isDjIncluded;
+  this.catering = catering;
+  this.price = price;
   branches.push(this);
 }
-
-
-Branch.prototype.render = function () {
-  for (let i = 0; i < size.length; i++) {
-    new Branch('indoor', 'adonees', 'img/adonees.png' , size[i], 'with DJ', 'with catring service');
-    new Branch('outdoor', 'Banafsaj', 'img/Banafsaj.jpg', size[i], 'without DJ', 'with catring service');
-    new Branch('outdoor', 'Country Club','img/Country Club.jpg' , size[i], 'without DJ', 'without catring service');
-    new Branch('outdoor', 'dunes club', 'img/dunes club.jpg' ,size[i], 'without DJ', 'without catring service');
-    new Branch('indoor', 'fairmont', 'img/fairmont.jpg' ,size[i], 'with DJ', 'with catring service');
-    new Branch('outdoor', 'fourseasons', 'img/fourseasons.jpg' ,size[i], 'without DJ', 'without catring service');
-    new Branch('indoor', 'Numan', 'img/Numan.jpg' ,size[i], 'without DJ', 'with catring service');
-    new Branch('indoor', 'rotana', 'img/rotana.jpg' ,size[i], 'with DJ', 'without catring service');
-    new Branch('outdoor', 'W amman', 'img/W amman.jpg' ,size[i], 'with DJ', 'with catring service');
-    new Branch('indoor', 'white halls', 'img/white halls.jpg' ,size[i], 'with DJ', 'without catring service');
-  }
-
-  let group;
-  if (this.setting === 'indoor' && this.size === size[2]) {
-    group = 'A';
-  }
-  if (this.setting === 'indoor' && this.size === (size[0] || size[1])) {
-    group = 'B';
-  }
-  if (this.setting === 'outdoor' && this.size === size[2]) {
-    group = 'C';
-  }
-  if (this.setting === 'outdoor' && this.size === (size[0] || size[1])) {
-    group = 'D';
-  }
-};
-
-var slideIndex = 1;
-showDivs(slideIndex);
 
 /* // image paths
 ../img/adonees.png
@@ -88,23 +51,11 @@ for (let i = 0; i < size.length; i++) {
 function onlyOne(checkbox) {
   const checkboxes = document.getElementsByName('check');
 
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+  checkboxes.forEach((item) => {
+    if (item !== checkbox) item.checked = false;
+  });
 }
 
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-=======
 let bName;
 let lName;
 let gName;
@@ -117,7 +68,8 @@ let door;
 
 // event listener to determine form inputs
 const form1 = document.getElementById('user-form');
-form1.addEventListener('submit', function (event) {
+form1.addEventListener('submit', formHandler);
+function formHandler(event) {
   event.preventDefault();
 
   bName = event.target.bName.value;
@@ -128,6 +80,7 @@ form1.addEventListener('submit', function (event) {
 
   const size = [document.getElementById('size0'), document.getElementById('size1'), document.getElementById('size2')];
   console.log('size' + size);
+  
   if (size[0].checked === true) {
     chosenSize = event.target.size0.value;
   } else if (size[1].checked === true) {
@@ -137,9 +90,10 @@ form1.addEventListener('submit', function (event) {
   }
   console.log('chosen' + chosenSize);
 
-
   const djIndex = [document.getElementById('dj1'), document.getElementById('dj2')];
+
   console.log('dj index' + djIndex);
+
   if (djIndex[0].checked) {
     dj = event.target.dj1.value;
   }
@@ -147,7 +101,9 @@ form1.addEventListener('submit', function (event) {
   if (djIndex[1].checked) {
     dj = event.target.dj2.value;
   }
+
   console.log('dj' + dj);
+
   const caIndex = [document.getElementById('ca1'), document.getElementById('ca2')];
 
   console.log('caIndex' + caIndex);
@@ -162,11 +118,13 @@ form1.addEventListener('submit', function (event) {
   console.log('catering' + catering);
 
   const doorIndex = [document.getElementById('in'), document.getElementById('out')];
+
   console.log('doorIndex' + doorIndex);
+
   if (doorIndex[0].checked) {
     door = event.target.in.value;
   }
-
+  
   if (doorIndex[1].checked) {
     door = event.target.out.value;
   }
@@ -174,7 +132,11 @@ form1.addEventListener('submit', function (event) {
 
   console.log('in', bName, lName, gName, glName, wDate, chosenSize, dj, catering, door);
   filter(door, chosenSize, dj, catering);
-});
+  document.getElementById('user-form').removeEventListener('submit', formHandler );
+  document.getElementById('user-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+  });
+}
 
 // rendering suitable options after form is filler
 const resultSection = document.getElementById('results');
@@ -217,7 +179,6 @@ function renderResults() {
     buttonEl.textContent = 'Select Venue';
   }
 }
-
 // function to filter branches based on user input and store into an array of objects
 let options = [];
 function filter(settingInput, sizeInput, djInput, cateringInput) {
@@ -235,6 +196,3 @@ function filter(settingInput, sizeInput, djInput, cateringInput) {
   // console.log('result of filter ' + options);
   renderResults();
 }
-
-
-

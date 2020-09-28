@@ -213,7 +213,10 @@ margin-top: 130px;
 }
 .aboutpic{
     border-radius: 500px;
-    width: 200px;
-    
+    width: 200px; 
+}
+.section1{
+  float: left;
+  position: relative;
 }
 
