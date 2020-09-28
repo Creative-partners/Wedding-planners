@@ -1,0 +1,35 @@
+#generated {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 70%;
+}
+.selected {
+  z-index: -2;
+  position: absolute;
+  top: 40%;
+  width: 700px;
+  height: 900px;
+  margin-left: 18%;
+}
+#generated h1{
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+#generated h2{
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#generated h3{
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+#generated p{
+  font-weight: lighter;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
