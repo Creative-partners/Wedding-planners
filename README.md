@@ -8,7 +8,7 @@
 
 ## Wireframe 
 
-![](wireframe.jpg)
+![](img/wireframe.jpg)
 
 ## Team Members:
 
