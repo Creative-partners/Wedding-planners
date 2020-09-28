@@ -24,9 +24,11 @@ header p {
   margin-top: 75px;
   margin-left: -200px;
 }
+header nav{
+  float: right;
+}
 header nav li{
   display: inline;
-  float: right;
   margin-right: 20px;
   line-height: 133px;
   text-transform: uppercase;
