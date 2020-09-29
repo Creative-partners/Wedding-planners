@@ -2,6 +2,46 @@
   font-family:'Gudea', sans-serif;
   color: #023F4A;
 }
+
+header nav{
+font-size: 16px;
+font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+background-color: white;
+width: 100%;
+margin-top: -50px;
+margin-bottom: 150px;
+box-shadow: 0 0 5px grey;
+padding: 20px 0px;
+
+}
+ header nav ul{
+  display: inline;
+}
+header nav ul li {
+  float: right;
+  margin-top: 10px
+}
+header nav ul li a{
+  text-decoration: none;
+  color:  rgb(146, 11, 11);
+  padding: 10px;
+  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+header nav ul li a:hover{
+  text-decoration: none;
+  color:  white;
+  padding: 10px;
+  border-radius: 2px;
+  background-color:rgb(146, 11, 11) ;
+  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+header nav h2{
+  font-family: 'Kaushan Script', cursive;
+  color: rgb(146, 11, 11);
+  margin-left: 10px;
+  font-size: xx-large;
+  margin-left: 20px;
+}
 .teamimg {
   width: 160px;
   border-radius: 500px;

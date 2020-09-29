@@ -4,7 +4,6 @@
 }
 header {
   background: white;
-  height: 123px;
   box-shadow: 0 0 5px grey;
 }
 header h2 {
@@ -13,7 +12,6 @@ header h2 {
   font-weight: bold;
   top: 30;
   float: left;
-  margin-top: 45px;
 }
 header p {
   text-align: left;
@@ -28,7 +26,6 @@ header nav{
 header nav li{
   display: inline;
   margin-right: 20px;
-  line-height: 133px;
   text-transform: uppercase;
 }
 header nav li a{
