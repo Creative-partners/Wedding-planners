@@ -2,11 +2,14 @@
 
 const size = ['small', 'medium', 'large'];
 let branches = [];
+// let options = [];
 
 // object to store locations
 function Branch(setting, name, location, image, size, isDjIncluded, catering, price) {
   this.setting = setting;
   this.location = location;
+  this.name = name;
+  this.id = name.split(' ').slice(0, -1).toString();
   this.image = image;
   this.setting = setting;
   this.size = size;
@@ -46,26 +49,6 @@ for (let i = 0; i < size.length; i++) {
   new Branch('outdoor', 'Four Seasons', 'Kindi St, Amman', '../img/fourseason.jpg', size[i], 'yes', 'yes', '55');
 }
 
-function onlyOne(checkbox) {
-  const checkboxes = document.getElementsByName('check');
-}
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = x.length };
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex - 1].style.display = "block";
-}
-
 let bName;
 let lName;
 let gName;
@@ -79,6 +62,7 @@ let door;
 // event listener to determine form inputs
 const form1 = document.getElementById('user-form');
 form1.addEventListener('submit', formHandler);
+
 function formHandler(event) {
   event.preventDefault();
 
@@ -88,21 +72,8 @@ function formHandler(event) {
   glName = event.target.glName.value;
   wDate = event.target.date.value;
 
-  // const size = [document.getElementById('size0'), document.getElementById('size1'), document.getElementById('size2')];
-  // console.log('size' + size);
-
-  // f64fa2e85a0c5fc5da2c499700bb1c5c300e9c
-  // if (size[0].checked === true) {
-  //   chosenSize = event.target.size0.value;
-  // } else if (size[1].checked === true) {
-  //   chosenSize = event.target.size1.value;
-  // } else {
-  //   chosenSize = event.target.size2.value;
-  // }
-  // console.log('chosen' + chosenSize);
-
-    chosenSiz = document.getElementById('size').value;
-   console.log(chosenSiz);
+  chosenSize = document.getElementById('size').value;
+  console.log(chosenSize);
 
   const djIndex = [document.getElementById('dj1'), document.getElementById('dj2')];
 
@@ -151,7 +122,7 @@ function formHandler(event) {
     event.preventDefault();
   });
 }
-
+let options = [];
 // rendering suitable options after form is filler
 const resultSection = document.getElementById('results');
 function renderResults() {
@@ -166,18 +137,18 @@ function renderResults() {
     const addressItem = document.createElement('li');
     unorderedList.appendChild(addressItem);
     addressItem.textContent = 'Address: ' + options[i].location;
-    const settingItem = document.createElement('li');
-    unorderedList.appendChild(settingItem);
-    settingItem.textContent = 'Works best for: ' + options[i].setting + ' events.';
-    const sizeItem = document.createElement('li');
-    unorderedList.appendChild(sizeItem);
-    sizeItem.textContent = 'Fits a ' + options[i].size + ' group.';
-    const djItem = document.createElement('li');
-    unorderedList.appendChild(djItem);
-    djItem.textContent = 'DJ included in price: ' + options[i].dj;
-    const cateringItem = document.createElement('li');
-    unorderedList.appendChild(cateringItem);
-    cateringItem.textContent = 'Catering included in price: ' + options[i].catering;
+    // const settingItem = document.createElement('li');
+    // unorderedList.appendChild(settingItem);
+    // settingItem.textContent = 'Works best for: ' + options[i].setting + ' events.';
+    // const sizeItem = document.createElement('li');
+    // unorderedList.appendChild(sizeItem);
+    // sizeItem.textContent = 'Fits a ' + options[i].size + ' group.';
+    // const djItem = document.createElement('li');
+    // unorderedList.appendChild(djItem);
+    // djItem.textContent = 'DJ included in price: ' + options[i].dj;
+    // const cateringItem = document.createElement('li');
+    // unorderedList.appendChild(cateringItem);
+    // cateringItem.textContent = 'Catering included in price: ' + options[i].catering;
     const priceItem = document.createElement('li');
     unorderedList.appendChild(priceItem);
     priceItem.textContent = 'Starting price (per person): ' + options[i].price + ' JDs';
@@ -194,7 +165,6 @@ function renderResults() {
   }
 }
 // function to filter branches based on user input and store into an array of objects
-let options = [];
 function filter(settingInput, sizeInput, djInput, cateringInput) {
   for (let i = 0; i < branches.length; i++) {
     if (branches[i].setting === settingInput) {
@@ -207,7 +177,7 @@ function filter(settingInput, sizeInput, djInput, cateringInput) {
       }
     }
   }
-  // console.log('result of filter ' + options);
   renderResults();
+  console.log('result of filter ' + options);
 }
 
