@@ -36,7 +36,7 @@ function renderTemplates() {
   }
 }
 // event listener to check for user location selection
-resultSection.addEventListener('click', selectLocationHandler);
+results.addEventListener('click', selectLocationHandler);
 function selectLocationHandler(event) {
   if (event.target.className === 'button') {
     for (let i = 0; i < options.length; i++) {
