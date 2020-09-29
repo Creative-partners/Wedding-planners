@@ -32,7 +32,7 @@ function renderInvitation() {
   }
 }
 
-let homePageSection = document.getElementById('previous');
+let homePageSection = document.querySelector('#previous');
 function renderAllInvitations() {
   let x;
   if (invitations.length < 3) {
@@ -44,7 +44,7 @@ function renderAllInvitations() {
     let localInvites = document.createElement('article');
     homePageSection.appendChild(localInvites);
     localInvites.setAttribute('class', 'invitation-article');
-    let headerPrevEl = document.createElement('h1');
+    let headerPrevEl = document.createElement('h3');
     localInvites.appendChild(headerPrevEl);
     headerPrevEl.textContent = 'The ' + invitations[i].groomFamilyName + ' family and the ' + invitations[i].brideFamilyName + ' family';
     let paragraphPrevEl = document.createElement('p');
@@ -53,9 +53,9 @@ function renderAllInvitations() {
     let brideNamePrevEl = document.createElement('h2');
     localInvites.appendChild(brideNamePrevEl);
     brideNamePrevEl.textContent = invitations[i].bride;
-    let andPrevEl = document.createElement('p');
+    let andPrevEl = document.createElement('h4');
     localInvites.appendChild(andPrevEl);
-    andPrevEl.textContent = '&'
+    andPrevEl.textContent = '&';
     let groomNamePrevEl = document.createElement('h2');
     localInvites.appendChild(groomNamePrevEl);
     groomNamePrevEl.textContent = invitations[i].groom;
@@ -69,5 +69,5 @@ function renderAllInvitations() {
     backgroundPrevEl.setAttribute('class', 'previous-invitation');
   }
 }
-renderInvitation();
+// renderInvitation();
 renderAllInvitations();
