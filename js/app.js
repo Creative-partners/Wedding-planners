@@ -210,3 +210,4 @@ function filter(settingInput, sizeInput, djInput, cateringInput) {
   // console.log('result of filter ' + options);
   renderResults();
 }
+

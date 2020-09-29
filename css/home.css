@@ -9,7 +9,6 @@
 }
   
 body { 
-    /* background-color: #f4f7fc; */
     height: 100px;
     background-color: rgb(255, 253, 253);
     background-image:
@@ -19,8 +18,28 @@ body {
       #f4f7fc 10%)
 }
 
+header h2 {
+    color: #023f4a;
+    font-family:'Gudea', sans-serif;
+    font-size: 25px ;
+    font-weight: bold;
+}
+header p {
+    color: #023f4a;
+    font-family:'Gudea', sans-serif;
+    font-size: 16px ;
+    font-weight: lighter;
+
+}
+header nav ul li a {
+    color: #023f4a;
+    font-family:'Gudea', sans-serif;
+    font-size: 18px ;
+}
+
 #hero article{
     text-align: center;
+    
 }
 #hero article:last-child{
     position: absolute;
@@ -31,9 +50,17 @@ body {
 }
 #hero article h1 {
     font-size: 80px;
+    font-family: 'Cookie', cursive;
+    font-weight: 300;
+    margin-top: 600px;
+    color: #023f4a;
 }
+
 #hero article p {
     font-size: 40px;
+    font-family: 'Cookie', cursive;
+    color: #023f4a;
+
 }
   
 video {
@@ -41,16 +68,15 @@ video {
     width: 100%;
     height: 720px;
     border-top: 3px solid #f0efef;
-    /* border-radius: 10px 0px 10px 400px; */
     z-index: -5;
     box-shadow: 10px 8px 10px #6e727d;
 }
     
 #sec1 article p {
     margin-left: 50px;
-    margin-top: 450px;
+    margin-top: 250px;
     color: #3a5068;
-    font-family: 'Saira', sans-serif;
+    font-family:'Gudea', sans-serif;
     font-size: 20px;
     font-weight: bold;
     line-height: 1.4;
@@ -118,14 +144,41 @@ video {
 #images {
     margin-top: -70px;
 }
-.teamimg{
-    display: inline-block;
-    float: left;
-    width: 200px;
-    border-radius: 500px;
-   
+
+
+#our {
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+    color: #023f4a;
+    font-family:'Gudea', sans-serif;
+    font-size: 23px ;
+    font-weight: bold;
+}
+#our span {
+    font-size: 15px;
 
 }
 
+.last-section img {
+    width: 160px;
+    border-radius: 500px;
+}
+.last-section p {
+    width: 100px;
+}
+.last-section article {
+    float: left;
+    margin-top:7%;
+    margin-left: 6%;
+}
+.last-section h3 {
+    margin-top: 10%;
+    color: #023f4a;
+    font-family:'Gudea', sans-serif;
+    font-size: 20px ;
+    font-weight: bold;
+    text-align: center;
+}
 
-  
+
