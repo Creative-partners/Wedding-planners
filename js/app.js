@@ -88,18 +88,21 @@ function formHandler(event) {
   glName = event.target.glName.value;
   wDate = event.target.date.value;
 
-  const size = [document.getElementById('size0'), document.getElementById('size1'), document.getElementById('size2')];
-  console.log('size' + size);
+  // const size = [document.getElementById('size0'), document.getElementById('size1'), document.getElementById('size2')];
+  // console.log('size' + size);
 
-  f64fa2e85a0c5fc5da2c499700bb1c5c300e9c
-  if (size[0].checked === true) {
-    chosenSize = event.target.size0.value;
-  } else if (size[1].checked === true) {
-    chosenSize = event.target.size1.value;
-  } else {
-    chosenSize = event.target.size2.value;
-  }
-  console.log('chosen' + chosenSize);
+  // f64fa2e85a0c5fc5da2c499700bb1c5c300e9c
+  // if (size[0].checked === true) {
+  //   chosenSize = event.target.size0.value;
+  // } else if (size[1].checked === true) {
+  //   chosenSize = event.target.size1.value;
+  // } else {
+  //   chosenSize = event.target.size2.value;
+  // }
+  // console.log('chosen' + chosenSize);
+
+    chosenSiz = document.getElementById('size').value;
+   console.log(chosenSiz);
 
   const djIndex = [document.getElementById('dj1'), document.getElementById('dj2')];
 
