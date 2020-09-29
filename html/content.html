@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/form.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+
   <title>Wedding Form</title>
 </head>
 
@@ -28,48 +31,54 @@
   <main>
 
     <section id="sec1">
-    <img id="img1" src="../img/form/couple.jpg" alt="">
-    <form id='user-form'>
+    <img id="img1" src="../img/logo/wood2.jpg" alt="">
+    <form>
       <fieldset>
-        <legend>Wedding Information</legend>
-        <br>
+        <p id="leg">Wedding Information <br><span>high quality services to meet your requirements ..</span></p>
+        <br><br><br><br>
        
-        <input type="text" id="bName" name="" required placeholder="Bride's Name"><br><br>
+        <input class="group1" type="text" id="bName" name="" required placeholder="Bride's Name"><br><br>
        
-        <input type="text" id="lName" name="" required placeholder="Bride's Last Name"><br><br>
+        <input class="group1" type="text" id="lName" name="" required placeholder="Bride's Last Name"><br><br>
         
-        <input type="text" id="gName" name="" required placeholder="Groom's Name"><br><br>
+        <input class="group1" type="text" id="gName" name="" required placeholder="Groom's Name"><br><br>
         
-        <input type="text" id="glName" name="" required placeholder="Groom's Last Name"><br><br>
+        <input class="group1" type="text" id="glName" name="" required placeholder="Groom's Last Name"><br><br>
         
-        <input type="date" name="date" id="date" placeholder="Wedding Date"><br><br>
-       
-        <label for="">DJ included: </label>
-        <label for="">Yes</label>
-        <input type="radio" name="dj" id="dj1" value="yes">
-        <label for="">No</label>
-        <input type="radio" name="dj" id="dj2" value="no"><br><br>
+        <input class="group1" type="date" name="date" id="date" placeholder="Wedding Date"><br><br>
+       <section class="radio"> 
+       <article>
+        <label  for="">DJ included: </label>
+        <label id="l1" for="">Yes</label>
+        <input class="group2" type="radio" name="dj" id="dj1" value="yes">
+        <label id="l4" for="">No</label>
+        <input class="group2" type="radio" name="dj" id="dj2" value="no"><br><br>
         <label for="">Catering included: </label>
-        <label for="">Yes</label>
-        <input type="radio" name="Ca" id="ca1" value="yes">
-        <label for="">No</label>
-        <input type="radio" name="Ca" id="ca2" value="no"><br><br>
+        <label id="l2" for="">Yes</label>
+        <input class="group2" type="radio" name="Ca" id="ca1" value="yes">
+        <label id="l5" for="">No</label>
+        <input class="group2" type="radio" name="Ca" id="ca2" value="no"><br><br>
         <label for=""> Venue Setting: </label>
-        <label for="">Indoor</label>
-        <input type="radio" name="in" id="in" value="indoor">
+        <label id="l3" for="">Indoor</label>
+        <input class="group2" type="radio" name="in" id="in" value="indoor">
         <label for="">Outdoor</label>
-        <input type="radio" name="out" id="out" value="outdoor"><br><br>
-        <label for="">Size of Wedding Party:</label> <br><br>
-        <select name="size" id="size" aria-placeholder="Small">
+        <input class="group2" type="radio" name="out" id="out" value="outdoor"><br><br>
+       </article>
+      </section>
+        <label id="size1" for="">Size of Wedding Party:</label> <br><br>
+        <select class="group1" name="size" id="size" aria-placeholder="Small">
           <option value="small" aria-placeholder="Small">Small (Up to 300 People)</option>
           <option value="medium" aria-placeholder="Small">Medium (300 to 700 People)</option>
           <option value="large">Large (700+ People)</option>
          
         </select>
+      
         <br>
         <br>
         <br>
         <input type="Submit" id="submit" value="Submit">
+      
+       
       </fieldset>
     </form>
   </section>
