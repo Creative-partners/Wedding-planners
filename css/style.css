@@ -34,3 +34,66 @@ header nav li{
 header nav li a{
   text-decoration: none;
 }
+
+
+footer {
+  clear: both;
+  position: relative;
+  background-color: #dfe8f8;
+ 
+ 
+}
+footer .first {
+  font-size: 21px ;
+  border-bottom: 3px solid #023f4a;
+  font-weight: bold;
+}
+footer .second {
+  font-size: 19px ;
+  font-weight: bold;
+}
+
+footer p {
+  margin-top: 7%;
+  margin-bottom: 3%;
+  display: inline-block;
+  margin-left: 8%;
+  color: #023f4a;
+  font-family:'Gudea', sans-serif;
+  font-size: 15px ;
+
+}
+footer section {
+  border-bottom: 1px solid #aabec2;
+
+}
+
+#end span {
+  margin-left: 8%;
+  color: #023f4a;
+  font-family:'Gudea', sans-serif;
+  font-size: 15px ;
+}
+#end {
+margin-left: 78%;
+margin-top: 1%;
+}
+#end a {
+  color: #023f4a;
+  text-align: center;
+  width: 42px;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 5px;
+ 
+}
+#end a:hover {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  width: 42px;
+  background-color: #023f4a;
+  text-decoration: none;
+  padding: 5px;
+ 
+}
