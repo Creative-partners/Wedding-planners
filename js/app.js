@@ -123,74 +123,40 @@ function formHandler(event) {
   });
 }
 let options = [];
-// // rendering suitable options after form is filler
-// const resultSection = document.getElementById('results');
-// function renderResults() {
-//   for (let i = 0; i < options.length; i++) {
-//     const articleEl = document.createElement('article');
-//     resultSection.appendChild(articleEl);
-//     const unorderedList = document.createElement('ul');
-//     articleEl.appendChild(unorderedList);
-//     const nameItem = document.createElement('li');
-//     unorderedList.appendChild(nameItem);
-//     nameItem.textContent = options[i].name;
-//     const addressItem = document.createElement('li');
-//     unorderedList.appendChild(addressItem);
-//     addressItem.textContent = 'Address: ' + options[i].location;
-//     // const settingItem = document.createElement('li');
-//     // unorderedList.appendChild(settingItem);
-//     // settingItem.textContent = 'Works best for: ' + options[i].setting + ' events.';
-//     // const sizeItem = document.createElement('li');
-//     // unorderedList.appendChild(sizeItem);
-//     // sizeItem.textContent = 'Fits a ' + options[i].size + ' group.';
-//     // const djItem = document.createElement('li');
-//     // unorderedList.appendChild(djItem);
-//     // djItem.textContent = 'DJ included in price: ' + options[i].dj;
-//     // const cateringItem = document.createElement('li');
-//     // unorderedList.appendChild(cateringItem);
-//     // cateringItem.textContent = 'Catering included in price: ' + options[i].catering;
-//     const priceItem = document.createElement('li');
-//     unorderedList.appendChild(priceItem);
-//     priceItem.textContent = 'Starting price (per person): ' + options[i].price + ' JDs';
-//     const imageEl = document.createElement('img');
-//     articleEl.appendChild(imageEl);
-//     imageEl.setAttribute('src', options[i].image);
-//     imageEl.setAttribute('title', options[i].name);
-//     imageEl.setAttribute('class', 'option-img');
-//     const buttonEl = document.createElement('button');
-//     articleEl.appendChild(buttonEl);
-//     buttonEl.setAttribute('id', options[i].id);
-//     buttonEl.setAttribute('class', 'button');
-//     buttonEl.textContent = 'Select Venue';
-//   }
-// }
 // rendering suitable options after form is filler
 const resultSection = document.getElementById('results');
 function renderResults() {
   for (let i = 0; i < options.length; i++) {
     const articleEl = document.createElement('article');
     resultSection.appendChild(articleEl);
+    const imageEl = document.createElement('img');
+    articleEl.appendChild(imageEl);
+    imageEl.setAttribute('src', options[i].image);
+    imageEl.setAttribute('title', options[i].name);
+    imageEl.setAttribute('class', 'option-img');
     const unorderedList = document.createElement('ul');
     articleEl.appendChild(unorderedList);
     const nameItem = document.createElement('li');
     unorderedList.appendChild(nameItem);
     nameItem.textContent = options[i].name;
-
-    const imageItem = document.createElement('li');
-    unorderedList.appendChild(imageItem);
-    const imageEl = document.createElement('img');
-    imageItem.appendChild(imageEl);
-    imageEl.setAttribute('src', options[i].image);
-    imageEl.setAttribute('title', options[i].name);
-    imageEl.setAttribute('class', 'option-img');
-
     const addressItem = document.createElement('li');
     unorderedList.appendChild(addressItem);
     addressItem.textContent = 'Address: ' + options[i].location;
+    // const settingItem = document.createElement('li');
+    // unorderedList.appendChild(settingItem);
+    // settingItem.textContent = 'Works best for: ' + options[i].setting + ' events.';
+    // const sizeItem = document.createElement('li');
+    // unorderedList.appendChild(sizeItem);
+    // sizeItem.textContent = 'Fits a ' + options[i].size + ' group.';
+    // const djItem = document.createElement('li');
+    // unorderedList.appendChild(djItem);
+    // djItem.textContent = 'DJ included in price: ' + options[i].dj;
+    // const cateringItem = document.createElement('li');
+    // unorderedList.appendChild(cateringItem);
+    // cateringItem.textContent = 'Catering included in price: ' + options[i].catering;
     const priceItem = document.createElement('li');
     unorderedList.appendChild(priceItem);
     priceItem.textContent = 'Starting price (per person): ' + options[i].price + ' JDs';
-
     const buttonItem = document.createElement('li');
     unorderedList.appendChild(buttonItem);
     const buttonEl = document.createElement('button');
