@@ -3,21 +3,14 @@ body{
   font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 #a11{
-  text-decoration: none;
   color: white;
-  text-decoration: underline;
 }
-
 #a12{
   text-decoration: none;
   color: white;
 }
 #h3{
-
-  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
   box-sizing: inherit;
-  padding: 9px 0px;
   text-align: center;
   background: rgb(6, 25, 41);
   font-size: 16px;
@@ -26,199 +19,60 @@ body{
   margin: 0px;
   padding: 10px;
 }
-#nav {
-  line-height: 1.5;
-  background-color: white;
-  margin-bottom: 10px;
-}
-ul{
-  display: inline;
-  
-}
-ul li {
-  
-  float: right;
-  margin-top: 10px
-
-}
-ul li a{
-  text-decoration: none;
-  color:  rgb(146, 11, 11);
-  padding: 10px;
-  
-  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  
-}
-h2{
-  
-  display: inline;
-  font-family: 'Kaushan Script', cursive;
-  color: rgb(146, 11, 11);
-  margin-left: 10px;
-  font-size: xx-large;
-  padding: 20px;
-}
-
-
-
-#myVideo{
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
+#myVideo {
   box-sizing: inherit;
   width: 100%;
-  height: 100%;
-  display: block;
-  min-width: 1150px;
-  overflow: hidden;
-  z-index: 1;
-  -webkit-font-smoothing: antialiased;
+}
+#i {
+  position: relative;
+  margin-top: -520px;
+  width: 100%;
 } 
-#n{
-    background-color: rgb(6, 25, 41);
-    background-size: cover;
-  }
-  
-
-  #i{
-    position: relative;
-    margin-top: -520px;
-    z-index: 100;
-     width: 100.1%;
-     float: left;
-     display: block;
-     
-    
-  }
- 
-.m{
-  clear: both;
-  font-weight: 400;
-  font-size: 16px;
+.m {
   line-height: 1.5;
-  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: inherit;
   position: absolute;
   top: 242px;
   left: 97px;
   color: #fff;
-  z-index: 5;
-  color: white;
-  margin-left: -10px;
   font-size: x-large;
   font-weight: bold;
-  
 }
-.btn{
+.btn {
   margin-top: 20px;
-  padding: 20px;
-  background-color: rgb(146, 11, 11);
-  color: white;
   font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin-left: 0px;
--webkit-font-smoothing: antialiased;
-box-sizing: inherit;
-touch-action: manipulation;
-min-width: 180px;
-padding: .688rem 1.25rem;
-line-height: 1.5;
-font-size: 1rem;
-transition: all .1s ease-out;
-transition-property: background-color,color,border-color;
-border-radius: 2px;
-cursor: pointer;
-overflow: hidden;
-position: relative;
-text-align: center;
-transform: perspective(1px) translateZ(0);
-
-border: 1px solid rgb(146, 11, 11);
-letter-spacing: 0;
-text-transform: capitalize;
-font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-font-weight: 500;
-width: 200px;
-display: block;
-margin-bottom: 14px;
-background-color: rgb(146, 11, 11);
-border-color: rgb(146, 11, 11);
-color: #fff;
+  box-sizing: inherit;
+  padding: .688rem 1.25rem;
+  line-height: 1.5;
+  font-size: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid rgb(146, 11, 11);
+  text-transform: capitalize;
+  font-weight: 500;
+  width: 200px;
+  background-color: rgb(146, 11, 11);
+  border-color: rgb(146, 11, 11);
 }
-
- .container{ 
-
-font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-
-text-align: center;
-
-margin-left: auto;
-margin-right: auto;
-width: auto;
-
-
-
+.container {
+  text-align: center;
+  width: 100%;
 }
-
-.icons{
-margin-top: -290px;
-position: relative;
-z-index: 770;
-font-size: x-large;
-line-height: 1.5;
--webkit-font-smoothing: antialiased;
-text-align: center;
-touch-action: manipulation;
-font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-font-weight: bolder;
-color: #01687b;
-text-decoration: none;
-display: inline-block;
-padding: 25px;
-width: auto;
-
+.icons {
+  margin-top: -290px;
+  position: relative;
+  font-size: x-large;
+  line-height: 1.5;
+  font-weight: bolder;
+  color: #01687b;
+  text-decoration: none;
+  display: inline-block;
+  padding: 25px;
 }
 .H{
   font-size: medium;
-font-weight: lighter;
-color:  #01687b;
+  font-weight: lighter;
+  color:  #01687b;
 }
-
-#div4{
- border-radius: 5px;
- 
- height: 350px;
- 
-
-}
-#par1{
-
-  display: inline-block;
-  font-size: large;
-  padding: 40px;
-  line-height: 1.8;
-  text-align: left;
-  color:  rgb(141, 29, 29);
-  height: 270px;
-  border-radius: 10px;
-  margin-left: 50px;
-  box-shadow: 2px 2px 4px black;
-  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  
-}
-
-
-#img1{
-  
-margin-right: 250px;
-  display: block;
-  height: 350px;
-  float: right;
-  width: 350px;
-}
-
 hr {
   clear: both;
   border: 0;
@@ -228,65 +82,38 @@ hr {
   margin-top: 70px;
   height: 1px;
   background: rgb(112, 107, 107);
-  background-image: linear-gradient(to right, #ccc, rgb(112, 107, 107), #ccc);}
-
-#div5{
-    clear: both;
-    border-radius: 5px;
-    margin-top: 50px ;
-    height: 350px;
-}   
-
-.mySlides{
-    float: right;
-    width: 350px;
-    height: 400px;
-    margin-top: -330px;
-    margin-right: 220px;
-    box-shadow: 2px 2px 4px black;
-    border-radius: 5px;
+  background-image: linear-gradient(to right, #ccc, rgb(112, 107, 107), #ccc);
 }
-
-#sec1 article p {
-  box-shadow: 2px 2px 4px black;
-  
-  border-radius: 10px;
-  margin-left: 120px;
-  margin-top: 100px;
-  color: rgb(16, 5, 48);
-  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+.mySlides{
+  float: right;
+  width: 350px;
+  height: 400px;
+  margin-top: -330px;
+  margin-right: 220px;
+  box-shadow: 2px 2px 4px grey;
+  border-radius: 5px;
+}
+#sec1 article p , #sec11 article p, #sec12 article p{
+  box-shadow: 2px 2px 4px grey;
+  border-radius: 4px;
+  color: #01687b;
   font-size: large;
+  font-weight: 600;
   height: 290px;
-  
   line-height: 1.8;
   width: 600px;
   padding: 55px;
   text-align: left;
 }
-#sec1 article p span{
- font-size: x-large; 
-  border-radius: 10px;
-  margin-bottom: 40px;
-  margin-top: 250px;
-  color: rgb(141, 29, 29);
-  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  font-weight: bold;
-  line-height: 1.8;
-  text-align: left;
-
+#sec1 article p {
+  margin-left: 120px;
+  margin-top: 100px;
 }
- #sec1 article p article{
-   box-shadow: 2px 2px 4px black;
-  border-radius: 10px; 
-  margin-left: 50px;
-  clear: both;
-  margin-top: 250px;
-   width: 600px; 
-  padding: 55px;
-  text-align: left;
-
+#sec1 article p span ,  #j , #sec12 article p span{
+  font-size: x-large;
+  color: rgb(141, 29, 29);
+  font-weight: bold;
 } 
-
 .w3-button {
   float: right;
   color:rgb(141, 29, 29);
@@ -296,22 +123,18 @@ hr {
   height: 35px;
   font-size: 25px;
   margin-top: 30px;
-
 }
-
 #images span {
   float: right;
   margin-top: 50px;
   margin-right: -220px;
 }
-
 #sec1 {
   background-color:#ffffff;
   height: 550px;
   margin-bottom: 70px;
  
 }
-
 #images {
   margin-top: -70px;
 }
@@ -323,225 +146,92 @@ hr {
   height: 400px;
   margin-top: 0px;
   margin-left: 120px; 
-  box-shadow: 2px 2px 4px black;
+  box-shadow: 2px 2px 4px grey;
   border-radius: 5px;
 }
-
 #f {
-box-shadow: 2px 2px 4px black;
-border-radius: 10px;
-margin-right: 120px; 
-margin-top: 100px;
-color: rgb(16, 5, 48);
-font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-font-size: large;
-height: 290px;
-line-height: 1.8;
-width: 600px;
-padding: 55px;
-text-align: left;
+  margin-right: 120px;
+  margin-top: 100px;
 }
-#j{
-font-size: x-large; 
-border-radius: 10px;
-margin-bottom: 40px;
-margin-top: 250px;
-color: rgb(141, 29, 29);
-font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-font-weight: bold;
-line-height: 1.8;
-text-align: left;
+#d {
+  margin-right: 260px;
+  float: right;
+  margin-top: -160px;
+  width: 600px;
+  padding: 55px;
 }
-#d{
-border-radius: 10px; 
-margin-right: 260px; 
-float: right;
-margin-top: -160px;
-font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-font-size: 20px;
-line-height: 1.4; 
- width: 600px; 
-padding: 55px;
-text-align: left;
-
-} 
-
-.w3-button1{
-  
-float: left;
-color: rgb(141, 29, 29);
-background-color: #ffffff;
-border: none;
-width: 35px;
-height: 35px;
-font-size: 25px;
-margin-top: 370px;
-
-
+.w3-button1{  
+  float: left;
+  color: rgb(141, 29, 29);
+  background-color: #ffffff;
+  border: none;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  margin-top: 370px;
 }
 #s{
   margin-left: -210px;
 }
-
 #images1 span {
-float: left;
-margin-top: 50px;
-
+  float: left;
+  margin-top: 50px;
 }
-
-#sec11 {
-background-color:#ffffff;
-height: 550px;
-
+#sec11 , #sec12 {
+  background-color:#ffffff;
+  height: 550px;
 }
-
-#images1 {
+#images1 , #images2 {
 margin-top: -70px;
 }
-
 .mySlides2{
   float: right;
   width: 350px;
   height: 400px;
   margin-top: -330px;
   margin-right: 200px;
-  box-shadow: 2px 2px 4px black;
+  box-shadow: 2px 2px 4px grey;
   border-radius: 5px;
 }
-
 #sec12 article p {
-box-shadow: 2px 2px 4px black;
-border-radius: 10px;
-margin-left: 120px;
-margin-top: -10px;
-color: rgb(16, 5, 48);
-font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-font-size: large;
-height: 290px;
-line-height: 1.8;
-width: 600px;
-padding: 55px;
-text-align: left;
-}
+  margin-left: 120px;
+  margin-top: -10px;
+ }
 #sec12 article p span{
-font-size: x-large; 
-border-radius: 10px;
-margin-bottom: 40px;
-margin-top: 250px;
-color:rgb(141, 29, 29);
-font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-
-font-weight: bold;
-line-height: 1.8;
-
-text-align: left;
-
+  border-radius: 10px;
+  margin-bottom: 40px;
+  margin-top: 250px;
 }
 #sec12 article p article{
- box-shadow: 2px 2px 4px black;
-border-radius: 10px; 
-margin-left: 50px;
-clear: both;
-margin-top: 250px;
- width: 600px; 
-padding: 55px;
-
-
+  margin-left: 50px;
+  margin-top: 250px;
 } 
-
 .w3-button2 {
-float: right;
-color: rgb(141, 29, 29);
-background-color: #ffffff;
-border: none;
-width: 35px;
-height: 35px;
-font-size: 25px;
-margin-top: 30px;
-
+  float: right;
+  color: rgb(141, 29, 29);
+  background-color: #ffffff;
+  border: none;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  margin-top: 30px;
 }
-
 #images2 span {
-float: right;
-margin-top: 50px;
-margin-right: -220px;
+  float: right;
+  margin-top: 50px;
+  margin-right: -220px;
 }
-
-#sec12 {
-background-color:#ffffff;
-height: 550px;
-
-}
-
-#images2 {
-margin-top: -70px;
-}
-
-footer {
-  clear: both;
-  position: relative;
-  background-color: #f0e2e2de;
-}
-footer .first {
-  font-size: 21px ;
-  border-bottom: 3px solid rgb(141, 29, 29);
-  font-weight: bold;
-}
-footer .second {
-  font-size: 19px ;
-  font-weight: bold;
-}
-footer p {
-  margin-top: 2%;
-  margin-bottom: 3%;
-  display: inline-block;
-  margin-left: 8%;
-  color: rgb(141, 29, 29);
-  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  font-size: 15px ;
-}
-footer section {
-  border-bottom: 1px solid #e29e9edc;
-}
-#end span {
-  margin-left: 8%;
-  color: rgb(141, 29, 29);
-  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  font-size: 15px ;
-}
-#end {
-margin-left: 78%;
-margin-top: 1%;
-}
-#end a {
-  color: rgb(141, 29, 29);
-  text-align: center;
-  width: 42px;
-  font-size: 22px;
-  text-decoration: none;
-  padding: 5px;
-}
-#end a:hover {
-  font-size: 22px;
-  color: white;
-  text-align: center;
-  width: 42px;
-  background-color: rgb(141, 29, 29);
-  text-decoration: none;
-  padding: 5px;
-}
-#ar2 h3{
+/* #ar2 h3{
   text-align: center;
   padding: 20px;
   font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
- color: rgb(26, 25, 83);
-background-color:  white;
-font-size: larger;
-font-weight: bold;
+  color: rgb(26, 25, 83);
+  background-color:  white;
+  font-size: larger;
+  font-weight: bold;
 
 }
 #ar2 p{
-
  text-align: center;
  padding: 20px;
  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -552,9 +242,7 @@ font-weight: bold;
  margin-right: 50px;
  margin-top: 10px;
  line-height: 1.8;
-
-
-}
+} */
 
 #our {
   margin-top: 5%;
@@ -567,10 +255,7 @@ font-weight: bold;
 }
 #our span {
   font-size: 15px;
-
 }
-
-
 .last-section img {
   width: 160px;
   border-radius: 500px;
@@ -580,8 +265,7 @@ font-weight: bold;
 }
 .last-section article {
   float: left;
-  margin-top:7%;
-  margin-left: 8%;
+  margin: 7% 5.2% 0;
 }
 .last-section h3 {
   margin-top: 10%;
@@ -590,9 +274,5 @@ font-weight: bold;
   font-size: 18px ;
   font-weight: bold;
   text-align: center;
-}
-
-
-.last-section h3 {
   margin-bottom: 90%;
 }
