@@ -3,43 +3,33 @@ body{
   font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 #a11{
-text-decoration: none;
-color: white;
-text-decoration: underline;
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
 }
 
 #a12{
   text-decoration: none;
   color: white;
-  
-  }
+}
 #h3{
 
-font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
--webkit-font-smoothing: antialiased;
-box-sizing: inherit;
-padding: 9px 0px;
-text-align: center;
-background: rgb(6, 25, 41);
-font-size: 16px;
-font-weight: normal;
-color: white;
-margin: 0px;
-padding: 10px;
+  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+  padding: 9px 0px;
+  text-align: center;
+  background: rgb(6, 25, 41);
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+  margin: 0px;
+  padding: 10px;
 }
-
-#nav{
-
-  font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
--webkit-font-smoothing: antialiased;
-box-sizing: inherit;
-background-color: white;
-margin-bottom: 10px;
-
-
+#nav {
+  line-height: 1.5;
+  background-color: white;
+  margin-bottom: 10px;
 }
 ul{
   display: inline;
@@ -54,7 +44,6 @@ ul li {
 ul li a{
   text-decoration: none;
   color:  rgb(146, 11, 11);
-  
   padding: 10px;
   
   font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
