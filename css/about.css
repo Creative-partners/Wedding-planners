@@ -2,40 +2,6 @@
   font-family:'Gudea', sans-serif;
   color: rgb(117, 8, 8);
 }
-
-#nav {
-  line-height: 1.5;
-  background-color: white;
-  margin-bottom: 10px;
-}
-ul{
-  display: inline;
-  
-}
-ul li {
-  
-  float: right;
-  margin-top: 10px
-
-}
-ul li a{
-  text-decoration: none;
-  color:  rgb(146, 11, 11);
-  padding: 10px;
-  
-  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  
-}
-h2{
-  
-  display: inline;
-  font-family: 'Kaushan Script', cursive;
-  color: rgb(146, 11, 11);
-  margin-left: 10px;
-  font-size: xx-large;
-  padding: 20px;
-}
-
  
 .teamimg {
   width: 160px;
@@ -79,58 +45,4 @@ h2{
 }
 .last-section article{
   margin-left: 50px;
-}
-
-footer {
-  clear: both;
-  position: relative;
-  background-color: #f0e2e2de;
-}
-footer .first1 {
-  font-size: 21px ;
-  border-bottom: 3px solid rgb(141, 29, 29);
-  font-weight: bold;
-}
-footer .second {
-  font-size: 19px ;
-  font-weight: bold;
-}
-footer p {
-  margin-top: 2%;
-  margin-bottom: 3%;
-  display: inline-block;
-  margin-left: 8%;
-  color: rgb(141, 29, 29);
-  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  font-size: 15px ;
-}
-footer section {
-  border-bottom: 1px solid #e29e9edc;
-}
-#end span {
-  margin-left: 8%;
-  color: rgb(141, 29, 29);
-  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  font-size: 15px ;
-}
-#end {
-margin-left: 78%;
-margin-top: 1%;
-}
-#end a {
-  color: rgb(141, 29, 29);
-  text-align: center;
-  width: 42px;
-  font-size: 22px;
-  text-decoration: none;
-  padding: 5px;
-}
-#end a:hover {
-  font-size: 22px;
-  color: white;
-  text-align: center;
-  width: 42px;
-  background-color: rgb(141, 29, 29);
-  text-decoration: none;
-  padding: 5px;
 }
