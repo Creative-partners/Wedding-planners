@@ -1,8 +1,122 @@
 
-  
-body { 
-  background-color: white;
+#h3{
 
+  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+  padding: 9px 0px;
+  text-align: center;
+  background: rgb(6, 25, 41);
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+}
+#nav {
+  line-height: 1.5;
+  background-color: white;
+  margin-bottom: 10px;
+}
+ul{
+  display: inline;
+  
+}
+ul li {
+  
+  float: right;
+  margin-top: 10px
+
+}
+ul li a{
+  text-decoration: none;
+  color:  rgb(146, 11, 11);
+  padding: 10px;
+  
+  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  
+}
+h2{
+  
+  display: inline;
+  font-family: 'Kaushan Script', cursive;
+  color: rgb(146, 11, 11);
+  margin-left: 10px;
+  font-size: xx-large;
+  padding: 20px;
+}
+
+
+
+footer {
+  clear: both;
+  position: relative;
+  background-color: #f0e2e2de;
+}
+footer .first {
+  font-size: 21px ;
+  border-bottom: 3px solid rgb(141, 29, 29);
+  font-weight: bold;
+}
+footer .second {
+  font-size: 19px ;
+  font-weight: bold;
+}
+footer p {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  display: inline-block;
+  margin-left: 8%;
+  color: rgb(141, 29, 29);
+  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 15px ;
+}
+footer section {
+  border-bottom: 1px solid #e29e9edc;
+}
+#end span {
+  margin-left: 8%;
+  color: rgb(141, 29, 29);
+  font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 15px ;
+}
+#end {
+margin-left: 78%;
+margin-top: 1%;
+}
+#end a {
+  color: rgb(141, 29, 29);
+  text-align: center;
+  width: 42px;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 5px;
+}
+#end a:hover {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  width: 42px;
+  background-color: rgb(141, 29, 29);
+  text-decoration: none;
+  padding: 5px;
+}
+
+
+main{
+  /* position: static; */
+  display: inline-block;
+  width: 100%;
+}
+body { 
+  height: 100px;
+  /* background-color: rgb(255, 253, 253); */
+  background-color: white;
+  /* background-image:
+  linear-gradient(
+    to right,
+    #d7dae0,
+    #f4f7fc 10%) */
 }
 
 #sec1 {
@@ -158,4 +272,84 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 17px;
   font-family: 'Gudea', sans-serif;
   margin-left: 38%;
-}
+} 
+
+#results article{
+  /* #results article{
+    display: inline-block;
+    width: 40%;
+    margin: 2.5%;
+    padding: 2.5%;
+    box-shadow: 0px 0px 10px grey;
+  } */
+  /* #results article {
+    position: sticky;
+    width: 25%;
+    margin: 4% 38%;
+    /* padding: 2.5%;
+    box-shadow: 0px 0px 10px grey;
+     text-align: center;
+  } */
+  #results article {
+    display: inline-block;
+    width: 25%;
+    box-shadow: 0px 0px 13px grey;
+    /* position: absolute; */
+    height: 460px;
+    margin-left: -51%;
+    margin-top: 4%;
+  }
+  #results article ul{
+  /* #results article ul{
+    float: left;
+  }
+  } */
+  #results article ul li{
+    text-align: left;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 15px;
+    list-style-type: none;
+  }
+  #results article ul li:first-child{
+    text-align: center;
+  /* #results article ul li:first-child {
+    /* text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 4%;
+  }*/
+  #results article ul li:first-child {
+    padding-top: 15px;
+    /* text-align: center; */
+    font-weight: bold;
+    font-size: larger;
+    /* margin-top: 4%; */
+  }
+  .option-img {
+    width: 300px;
+    /* width: 300px; */
+    width: 100%;
+    height: 300px;
+    float: right;
+    /* float: right; */
+  }
+  .button{
+  /* .button{
+    display: inline-block;
+    width: 40%;
+    margin: 2.5%;
+    padding: 2.5%;
+    box-shadow: 0px 0px 2px grey;
+  } */
+  .button {
+    /* display: inline-block; */
+    width: 100%;
+    /* margin: 2.5% 0px -6% 0px; */
+    padding: 2%;
+    border-style: hidden;
+    /* box-shadow: 0px 0px 2px grey; */
+  }
+  .template-backgrounds {
+    box-shadow: 0 0 4px grey;
+
