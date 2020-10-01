@@ -134,7 +134,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border-width: 2px;
 }
 #size1 {
-  margin-left: 40%;
+  margin-left: 42%;
   font-size: 20px;
   font-family: 'Gudea', sans-serif;
   color: #023f4a;
@@ -142,7 +142,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 #size {
   color: grey;
   font-size: 15px;
-  padding-left: 15%;
+  padding-left: 18%;
 }
 
 #submit {
@@ -213,29 +213,27 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
   .template-backgrounds {
     box-shadow: 0 0 4px grey;
-    width: 300px;
-    height: 450px;
-    margin: 18px;
+    width: 251px;
+    height: 350px;
+    margin: 25px;
 }
 #templates{
   margin-top: 166px;
 }
 #templates article h4{
-
-    position: relative;
-    margin-top: -110px;
-    font-size: 45px;
-    opacity: .9;
-    text-align: center;
-    font-weight: normal;
-    font-family: 'Cookie', cursive;
-}
-#templates article p{
   position: relative;
-  /* margin-top: -110px; */
-  font-size: 30px;
-  opacity: .9;
+  margin-top: -110px;
+  font-size: 45px;
   text-align: center;
   font-weight: normal;
   font-family: 'Cookie', cursive;
+}
+#templates article p {
+  position: relative;
+  margin: 15px;
+  font-size: 20px;
+  opacity: .9;
+  text-align: center;
+  font-weight: normal;
+  /* font-family: 'Cookie', cursive; */
 }
