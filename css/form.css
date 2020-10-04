@@ -169,7 +169,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 #results article {
   display: inline-block;
   width: 30%;
-  /* margin-top: -300px; */
   background-color: #ffffffe3;
   margin: 0px 20px;
 }
@@ -194,28 +193,34 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-bottom: 101px;
   position: absolute;
   z-index: -1;
+}  
+.button {
+  width: 100%;
+  padding: 2%;
+  border-style: hidden;
+  background-color:#023f4a;
+  color: white;
+  font-size: 15px;
+  font-family: 'Gudea', sans-serif;  
 }
-  
-  .button {
+.button {
     width: 100%;
     padding: 2%;
     border-style: hidden;
     background-color:#023f4a;
     color: white;
     font-size: 15px;
-    font-family: 'Gudea', sans-serif;
-  
-  }
-  .button:hover{
-      background-color:#f0e2e2de;
-      color: #012a31;
-    }
-
-  .template-backgrounds {
-    box-shadow: 0 0 4px grey;
-    width: 251px;
-    height: 350px;
-    margin: 25px;
+    font-family: 'Gudea', sans-serif; 
+ }
+.button:hover{
+  background-color:#f0e2e2de;
+  color: #012a31;
+}
+.template-backgrounds {
+  box-shadow: 0 0 4px grey;
+  width: 251px;
+  height: 350px;
+  margin: 25px;
 }
 #templates{
   margin-top: 166px;
