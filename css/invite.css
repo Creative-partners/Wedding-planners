@@ -13,9 +13,9 @@ main{
   z-index: -2;
   position: absolute;
   top: 20%;
-  width: 40%;
-  height: 850px;
-  margin-left: 30%;
+  width: 700px;
+  height: 900px;
+  margin-left: 27%;
 }
 #generated h1{
   font-family: 'Dancing Script', cursive;
@@ -51,10 +51,10 @@ main{
 }
 #previous article {
   color: black;
-  display: inline-block;
-  width: 500px;
-  margin-top: 140px;
-  margin-right: 9.5px;
+    display: inline-block;
+    width: 500px;
+    margin-top: 140px;
+    margin-right: -25.5px;
 }
 .previous-invitation {
   display: inline-block;

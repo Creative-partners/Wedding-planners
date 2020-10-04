@@ -134,7 +134,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border-width: 2px;
 }
 #size1 {
-  margin-left: 40%;
+  margin-left: 42%;
   font-size: 20px;
   font-family: 'Gudea', sans-serif;
   color: #023f4a;
@@ -142,7 +142,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 #size {
   color: grey;
   font-size: 15px;
-  padding-left: 15%;
+  padding-left: 18%;
 }
 
 #submit {
@@ -203,21 +203,31 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 15px;
   font-family: 'Gudea', sans-serif;  
 }
+.button {
+    width: 100%;
+    padding: 2%;
+    border-style: hidden;
+    background-color:#023f4a;
+    color: white;
+    font-size: 15px;
+    font-family: 'Gudea', sans-serif; 
+ }
 .button:hover{
   background-color:#f0e2e2de;
   color: #012a31;
 }
 .template-backgrounds {
   box-shadow: 0 0 4px grey;
-  width: 17%;
+  width: 251px;
   height: 350px;
-  margin: 1.5%;
+  margin: 25px;
 }
 #templates{
   margin-top: 166px;
 }
 #templates article h4{
   position: relative;
+  margin-top: -110px;
   font-size: 45px;
   text-align: center;
   font-weight: normal;
@@ -225,9 +235,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 #templates article p {
   position: relative;
-  margin: 20px;
-  font-size: 17px;
+  margin: 15px;
+  font-size: 20px;
   opacity: .9;
   text-align: center;
   font-weight: normal;
+  /* font-family: 'Cookie', cursive; */
 }
